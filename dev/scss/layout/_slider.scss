@@ -1,0 +1,163 @@
+.slider {
+    @include flex(row, flex-start, stretch, nowrap);
+
+    overflow: hidden;
+
+    &__main {
+        position: relative;
+        background-color: $colorDarkViolet;
+        width: 100%;
+
+        @media (min-width: 1200px) {
+            display: flex;
+            flex-shrink: 0;
+            overflow: hidden;
+            width: 93%;
+            transform: skew(45deg);
+            transform-origin: 0 100%;
+
+            .slick-slider {
+                width: 100%;
+                transform: skew(-45deg);
+                transform-origin: 100% 100%;
+            }
+        }
+
+        @media (min-width: 1600px) {
+            max-height: 400px;
+        }
+
+        @media (min-width: 1800px) {
+            width: 87%;
+            max-height: 420px;
+        }
+    }
+
+    &__aside {
+        position: relative;
+        z-index: 2;
+        flex-shrink: 0;
+        overflow: hidden;
+        width: 35%;
+        transform: skew(45deg);
+        transform-origin: 100% 100%;
+        margin-left: 60px;
+        background-color: $colorMediumGrey;
+
+        @media (max-width: 1199px) {
+            display: none;
+        }
+    }
+}
+
+.slide {
+    position: relative;
+
+    @media (min-width: 1600px) {
+        &__image {
+            width: 100%;
+        }
+    }
+
+    &__caption {
+        position: absolute;
+        font-size: 1rem;
+        color: rgba($colorWhite, 0.9);
+        line-height: 1.5;
+        top: 72px;
+        left: 407px;
+        width: 100%;
+        max-width: 560px;
+
+        @media (min-width: 1480px) {
+            font-size: 1.125rem;
+            line-height: 1.8;
+            max-width: 680px;
+        }
+
+        @media (min-width: 1800px) {
+            font-size: 1.25rem;
+            max-width: 750px;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1340px) {
+            max-width: 440px;
+        }
+
+        @media (max-width: 991px) {
+            left: 242px;
+        }
+
+        @media (max-width: 839px) {
+            left: 181px;
+        }
+
+        @media (max-width: 767px) {
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 0 15px;
+        }
+
+        @media (max-width: 575px) {
+            top: 38px;
+            max-width: 460px;
+        }
+
+        @media (max-width: 374px) {
+            font-size: 0.875rem;
+        }
+
+        &::before {
+            content: url("./../images/quote.png");
+            position: absolute;
+            top: 4px;
+            left: -191px;
+
+            @media (max-width: 839px) {
+                left: -161px;
+            }
+
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+    }
+
+    &__blockquote {
+        margin-bottom: 38px;
+
+        @media (max-width: 575px) {
+            margin-bottom: 26px;
+        }
+    }
+
+    &__credits {
+        @include flex(row, flex-start, center, nowrap);
+    }
+
+    &__icon {
+        @include flex(row, center, center, nowrap);
+
+        width: 70px;
+        height: 70px;
+        border: 1px solid rgba($colorMediumGrey, 0.2);
+        border-radius: 50%;
+    }
+
+    &__author {
+        margin-left: 28px;
+
+        &-name,
+        &-info {
+            font-size: 0.875rem;
+        }
+
+        &-name {
+            color: $colorWhite;
+        }
+
+        &-info {
+            color: rgba($colorWhite, 0.72);
+        }
+    }
+}

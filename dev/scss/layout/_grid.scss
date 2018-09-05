@@ -1,0 +1,38 @@
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+
+    &--flex {
+        @include flex(row, space-between, center, wrap);
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1154px;
+    }
+}

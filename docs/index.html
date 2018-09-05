@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="S-Pro Landing Page">
+    <title>S-Pro Landing Page</title>
+    <link href="css/main.min.css" rel="stylesheet">
+    <link href="libs/slick/slick.css" rel="stylesheet">
+    <link href="libs/fontawesome/css/all.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="images/favicons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="images/favicons/favicon-128.png" sizes="128x128" />
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
+    <meta name="application-name" content="S-PRO"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="images/favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="images/favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="images/favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="images/favicons/mstile-310x310.png" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a class="company-brand" href="#">
+                <img src="images/logo.svg" alt="S-Pro">
+            </a>
+            <button class="btn-toggle" type="button" id="btn-toggle">
+                <span class="btn-toggle__icon"></span>
+            </button>
+            <nav class="header-collapse" id="header-collapse">
+                <ul class="header-nav">
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Item 1</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Item 2</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Item 3</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Item 4</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Item 5</a>
+                    </li>
+                </ul>
+                <a class="btn btn--md btn--outline outline-violet header__btn">
+                    Button text
+                </a>
+            </nav>
+        </div>
+        <div class="header__shape"></div>
+    </header>
+
+    <section class="jumbotron">
+        <div class="jumbotron__image">
+            <div class="container">
+                <div class="jumbotron__caption">
+                    <h1 class="page-heading">
+                        <span class="highlighted">Virginia</span> travel for kids
+                    </h1>
+                    <div class="jumbotron__actions">
+                        <a class="btn btn--md btn--default jumbotron__btn">
+                            <i class="fas fa-cloud-download-alt"></i> 
+                            Button text
+                        </a>
+                        <a class="btn btn--lg btn--outline outline-white jumbotron__btn">
+                            <i class="fas fa-cloud-download-alt"></i> 
+                            Button text
+                        </a>
+                        <a class="btn btn--md btn--outline outline-white jumbotron__btn">
+                            <i class="far fa-play-circle"></i> 
+                            Button text
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="timer">
+            <div class="timer__caption">
+                <h5 class="timer__heading">Title block</h5>
+                <ul class="timer__countdown">
+                    <li class="timer__slot">
+                        <div class="timer__label">Days</div>
+                        <div class="timer__value opacity-0" id="days"></div>
+                    </li>
+                    <li class="timer__slot">
+                        <div class="timer__label">Hours</div>
+                        <div class="timer__value opacity-1" id="hours"></div>
+                    </li>
+                    <li class="timer__slot">
+                        <div class="timer__label">Minutes</div>
+                        <div class="timer__value opacity-2" id="minutes"></div>
+                    </li>
+                    <li class="timer__slot">
+                        <div class="timer__label">Seconds</div>
+                        <div class="timer__value opacity-3" id="seconds"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider">
+        <div class="slider__main">
+            <div class="slick-slider">
+                <div class="slide">
+                    <img class="slide__image" src="images/slide.jpg" alt="Roy Rivera">
+                    <div class="slide__caption">
+                        <p class="slide__blockquote">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <div class="slide__credits">
+                            <div class="slide__icon">
+                                <img src="images/logo-round.svg" alt="">
+                            </div>
+                            <div class="slide__author">
+                                <h6 class="slide__author-name">Roy Rivera</h6>
+                                <p class="slide__author-info">
+                                    FrontEnd Developer<br>
+                                    S-PRO
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img class="slide__image" src="images/slide.jpg" alt="Roy Rivera">
+                    <div class="slide__caption">
+                        <p class="slide__blockquote">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <div class="slide__credits">
+                            <div class="slide__icon">
+                                <img src="images/logo-round.svg" alt="">
+                            </div>
+                            <div class="slide__author">
+                                <h6 class="slide__author-name">Roy Rivera</h6>
+                                <p class="slide__author-info">
+                                    FrontEnd Developer<br>
+                                    S-PRO
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img class="slide__image" src="images/slide.jpg" alt="Roy Rivera">
+                    <div class="slide__caption">
+                        <p class="slide__blockquote">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <div class="slide__credits">
+                            <div class="slide__icon">
+                                <img src="images/logo-round.svg" alt="">
+                            </div>
+                            <div class="slide__author">
+                                <h6 class="slide__author-name">Roy Rivera</h6>
+                                <p class="slide__author-info">
+                                    FrontEnd Developer<br>
+                                    S-PRO
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-buttons"></div>
+        </div>
+        <div class="slider__aside"></div>
+    </section>
+
+    <section class="history text-center">
+        <h2 class="section-heading section-heading__history">Roadmap</h2>
+        <h3 class="section-subheading section-subheading__history">
+            <span class="highlighted highlighted--sm">Party</span>
+            jokes startling but <br/> unnecessary
+        </h3>
+
+        <div class="timeline">
+            <div class="timeline__step timeline__step--first timeline__step--completed">
+                <div class="timeline__content">
+                    <h4 class="timeline__heading">
+                        <span>S1 2018</span>
+                    </h4>
+                    <ul class="timeline__description">
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Consectetur adipiscing elit</li>
+                        <li>Sed do eiusmod tempor incididunt</li>
+                        <li>Ut enim ad minim veniam</li>
+                    </ul>
+                </div>
+                <div class="timeline__indicator">
+                    <i class="fas fa-check"></i>
+                </div>
+            </div>
+            <div class="timeline__step timeline__step--inverse timeline__step--current">
+                <div class="timeline__content">
+                    <h4 class="timeline__heading">
+                        <span>S2 2018</span>
+                    </h4>
+                    <ul class="timeline__description">
+                        <li>Consectetur adipiscing elit</li>
+                        <li>Sed do eiusmod tempor incididunt</li>
+                        <li>Ut enim ad minim veniam</li>
+                    </ul>
+                </div>
+                <div class="timeline__indicator"></div>
+            </div>
+            <div class="timeline__step">
+                <div class="timeline__content">
+                    <h4 class="timeline__heading">
+                        <span>S3 2018</span>
+                    </h4>
+                    <ul class="timeline__description">
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                        <li>Ut enim ad minim veniam, quis nostrud exercitation</li>
+                    </ul>
+                </div>
+                <div class="timeline__indicator"></div>
+            </div>
+            <div class="timeline__step timeline__step--inverse">
+                <div class="timeline__content">
+                    <h4 class="timeline__heading">
+                        <span>S1 2019</span>
+                    </h4>
+                    <ul class="timeline__description">
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Consectetur adipiscing elit</li>
+                        <li>Sed do eiusmod tempor incididunt</li>
+                        <li>Ut enim ad minim veniam</li>
+                    </ul>
+                </div>
+                <div class="timeline__indicator"></div>
+            </div>
+            <div class="timeline__step timeline__step">
+                <div class="timeline__content">
+                    <h4 class="timeline__heading">
+                        <span>S2 2019</span>
+                    </h4>
+                    <ul class="timeline__description">
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        <li>Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </li>
+                    </ul>
+                </div>
+                <div class="timeline__indicator"></div>
+            </div>
+            <div class="timeline__step timeline__step--inverse">
+                <div class="timeline__content">
+                    <h4 class="timeline__heading">
+                        <span>S3 2019</span>
+                    </h4>
+                    <ul class="timeline__description">
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore
+                        </li>
+                        <li>Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </li>
+                    </ul>
+                </div>
+                <div class="timeline__indicator"></div>
+            </div>
+            <div class="timeline__step timeline__step">
+                <div class="timeline__content">
+                    <h4 class="timeline__heading">
+                        <span>S4 2019</span>
+                    </h4>
+                    <ul class="timeline__description">
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                        <li>Ut enim ad minim veniam, quis nostrud exercitation</li>
+                    </ul>
+                </div>
+                <div class="timeline__indicator"></div>
+            </div>
+            <div class="timeline__step timeline__step--last">
+                <div class="timeline__content">
+                    <h4 class="timeline__heading">
+                        <span>2020</span>
+                    </h4>
+                    <ul class="timeline__description">
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Consectetur adipiscing elit</li>
+                    </ul>
+                </div>
+                <div class="timeline__indicator">
+                    <img src="images/logo-round.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer"> 
+        <div class="footer__top">
+            <div class="container container--flex">
+                <a class="company-brand footer__company-brand" href="#">
+                    <img src="images/logo.svg" alt="S-Pro">
+                </a>
+                <ul class="footer-social">
+                    <li class="footer-social__item">
+                        <a class="footer-social__link fab fa-telegram-plane" href="https://telegram.org/" target="_blank">
+                            Telegram
+                        </a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a class="footer-social__link fab fa-twitter" href="https://twitter.com/" target="_blank">
+                            Twitter
+                        </a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a class="footer-social__link fab fa-linkedin-in" href="https://www.linkedin.com/" target="_blank">
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a class="footer-social__link fab fa-facebook-f" href="https://www.facebook.com/" target="_blank">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a class="footer-social__link fab fa-medium-m" href="https://medium.com/" target="_blank">
+                            Medium
+                        </a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a class="footer-social__link fab fa-reddit-alien" href="https://www.reddit.com/" target="_blank">
+                            Reddit
+                        </a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a class="footer-social__link fab fa-btc" href="https://www.bitcoin.com/" target="_blank">
+                            Bitcoin
+                        </a>
+                    </li>
+                    <li class="footer-social__item">
+                        <a class="footer-social__link fab fa-github" href="https://github.com/" target="_blank">
+                            GitHub
+                        </a>
+                    </li>
+                </ul>
+                <div></div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container container--flex">
+                <ul class="footer-nav">
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Privacy Policy</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Terms &amp; Conditions</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a class="footer-nav__link" href="#">Tokensale Agreement</a>
+                    </li>
+                </ul>
+                <p class="footer__copyright">
+                    &copy; 2018 S-PRO - All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

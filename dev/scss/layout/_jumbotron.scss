@@ -1,0 +1,161 @@
+.jumbotron {
+    position: relative;
+    color: $colorWhite;
+    margin-bottom: 45px;
+
+    @media (max-width: 1199px) {
+        margin-bottom: 0;
+    }
+
+    &__image {
+        position: relative;
+        background: url("./../images/bg-image.jpg") no-repeat top left;
+        background-size: cover;
+        z-index: 0;
+    }
+
+    &__caption {
+        position: relative;
+        padding: 210px 60px 250px;
+        z-index: 1;
+
+        @media (min-width: 1600px) {
+            padding-top: 230px;
+        }
+
+        @media (max-width: 1199px) {
+            text-align: center;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        @media (max-width: 767px) {
+            padding: 140px 15px;
+        }
+
+        @media (max-width: 479px) {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+    }
+
+    &__actions {
+        @include inline-flex(row, flex-start, center, nowrap);
+
+        margin-top: 31px;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+
+    &__btn {
+        & + .jumbotron__btn {
+            margin-left: 20px;
+
+            @media (min-width: 1600px) {
+                margin-left: 24px;
+            }
+
+            @media (max-width: 767px) {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+.timer {
+    background-color: $colorCyan;
+    font-family: $fontBrown;
+    text-transform: uppercase;
+    text-align: right;
+    padding: 40px 120px;
+
+    @media (min-width: 1200px) {
+        position: absolute;
+        right: 0;
+        bottom: 50px;
+        z-index: 2;
+        padding: 41px 48px 34px 0;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            border-bottom: 211px solid $colorCyan;
+            border-left: 183px solid transparent;
+            top: 0;
+            right: 100%;
+        }
+    }
+
+    @media (min-width: 1600px) {
+        padding-top: 47px;
+        padding-bottom: 39px;
+
+        &::before {
+            border-bottom: 222px solid $colorCyan;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        text-align: center;
+        padding: 60px 15px;
+        margin: 0;
+    }
+
+    &__caption {
+        @media (min-width: 1200px) {
+            position: relative;
+            right: 53px;
+        }
+    }
+
+    &__heading {
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+        margin-bottom: 23px;
+        padding: 0 20px;
+    }
+
+    &__countdown {
+        @include flex(row, center, center, nowrap);
+        @include ul-reset();
+    }
+
+    &__slot {
+        text-align: center;
+        padding: 0 15px;
+
+        @media (max-width: 479px) {
+            padding: 0 10px;
+        }
+    }
+
+    &__label {
+        font-size: 0.7rem;
+        color: rgba($colorWhite, 0.72);
+        letter-spacing: 0.5px;
+        line-height: 1;
+    }
+
+    &__value {
+        font-size: 3rem;
+        min-height: 68px;
+        min-width: 70px;
+
+        @media (max-width: 479px) {
+            font-size: 2rem;
+            min-height: 48px;
+            min-width: 50px;
+        }
+
+        @for $i from 0 to 4 {
+            &.opacity-#{$i} {
+                opacity: 1 - $i * 0.2;
+            }
+        }
+    }
+}

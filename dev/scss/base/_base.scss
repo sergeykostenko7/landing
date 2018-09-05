@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+body {
+    font-family: $fontCera;
+    font-size: 0.875rem;
+    font-weight: normal;
+    line-height: 1.428571;
+    color: $colorDarkBlue;
+    background-color: $colorWhite;
+    min-width: 320px;
+}
+
+[tabindex="-1"]:focus {
+    outline: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    color: $colorDarkBlue;
+    text-decoration: none;
+    transition: color $timeDefault ease-in-out;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+a,
+area,
+button,
+[role="button"],
+input:not([type="range"]),
+label,
+select,
+summary,
+textarea {
+    touch-action: manipulation;
+}
+
+button {
+    border-radius: 0;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}

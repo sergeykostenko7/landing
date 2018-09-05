@@ -1,0 +1,87 @@
+.slick-prev,
+.slick-next {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background-color: rgba($colorCyan, 0.1);
+    font-size: 0;
+    line-height: 0;
+    cursor: pointer;
+    padding: 18px 32px;
+    border: 0;
+    outline: none;
+    transition: background-color $timeDefault ease-in-out;
+    z-index: 1;
+
+    @media (min-width: 1200px) {
+        &::before {
+            display: inline-block;
+            transform: skew(-45deg);
+        }
+    }
+
+    @media (max-width: 575px) {
+        padding: 13px 26px;
+    }
+
+    &:hover {
+        background-color: $colorCyan;
+    }
+}
+
+.slick-prev {
+    right: 176px;
+
+    &::before {
+        content: url("./../images/arrow-left.svg");
+    }
+
+    @media (max-width: 575px) {
+        right: 155px;
+    }
+}
+
+.slick-next {
+    right: -1px;
+
+    &::before {
+        content: url("./../images/arrow-right.svg");
+    }
+}
+
+@media (min-width: 1200px) {
+    .slick-slider {
+        z-index: -1;
+    }
+}
+
+.slick-counter {
+    position: absolute;
+    right: 111px;
+    bottom: 15px;
+    display: inline-block;
+    font-family: $fontBrown;
+    font-size: 0.75rem;
+    color: rgba($colorWhite, 0.5);
+    text-transform: uppercase;
+
+    span {
+        color: $colorWhite;
+    }
+
+    @media (min-width: 1200px) {
+        transform: skew(-45deg);
+    }
+
+    @media (max-width: 575px) {
+        right: 95px;
+        bottom: 12px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .slick-list,
+    .slick-track {
+        height: 100%;
+    }
+}

@@ -1,0 +1,19 @@
+@mixin flex($flex-direction, $justify-content, $align-items, $flex-wrap) {
+    display: flex;
+    flex-flow: $flex-direction $flex-wrap;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin inline-flex($flex-direction, $justify-content, $align-items, $flex-wrap) {
+    display: inline-flex;
+    flex-flow: $flex-direction $flex-wrap;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin ul-reset() {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

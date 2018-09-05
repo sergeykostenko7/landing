@@ -1,0 +1,60 @@
+.btn {
+    display: inline-block;
+    font-family: $fontBrown;
+    font-size: 0.75rem;
+    line-height: 1.42857143;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0s;
+
+    &--default {
+        background-color: $colorWhite;
+        color: $colorViolet;
+
+        &:hover {
+            background-color: rgba($colorWhite, 0.75);
+        }
+    }
+
+    &--outline {
+        background-color: transparent;
+
+        &.outline-white {
+            color: $colorWhite;
+            border-color: $colorWhite;
+
+            &:hover {
+                background-color: $colorWhite;
+                color: $colorViolet;
+                border-color: transparent;
+            }
+        }
+
+        &.outline-violet {
+            color: $colorViolet;
+            border-color: $colorViolet;
+
+            &:hover {
+                background-color: $colorViolet;
+                color: $colorWhite;
+                border-color: transparent;
+            }
+        }
+    }
+
+    &--md {
+        padding: 17px 35px;
+    }
+
+    &--lg {
+        padding: 17px 56px;
+    }
+}

@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Cera';
+    src:
+        url('./../fonts/Cera-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Cera-Regular.otf') format('opentype'),
+        url('./../fonts/Cera-Regular.woff') format('woff'),
+        url('./../fonts/Cera-Regular.ttf') format('truetype'),
+        url('./../fonts/Cera-Regular.svg#Cera-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brown';
+    src:
+        url('./../fonts/Brown-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./../fonts/Brown-Bold.otf') format('opentype'),
+        url('./../fonts/Brown-Bold.woff') format('woff'),
+        url('./../fonts/Brown-Bold.ttf') format('truetype'),
+        url('./../fonts/Brown-Bold.svg#Brown-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
